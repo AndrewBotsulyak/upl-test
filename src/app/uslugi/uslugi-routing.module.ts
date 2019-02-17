@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {CategoryListComponent} from './containers/category-list/category-list.component';
 import {UslugiGuard} from './services/uslugi.guard';
+import {OpenUslugaComponent} from './containers/open-usluga/open-usluga.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
     children: [
       {
         path: ':uslugaId',
+        component: OpenUslugaComponent,
         canActivate: [UslugiGuard]
       }
     ]

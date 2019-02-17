@@ -27,13 +27,8 @@
       </usluga-item>
     </ng-template>
 
-    <ng-template #openUsluga>
-      <usluga-item
-        [item]="(activeUsluga$ | async)"
-        (uslugaClick)="handleUslugaClick($event)"
-      >
-      </usluga-item>
-    </ng-template>
+
+    <router-outlet></router-outlet>
 
   </div>
 

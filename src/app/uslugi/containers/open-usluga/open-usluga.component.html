@@ -1,0 +1,16 @@
+<div
+  class="usluga-item"
+  (click)="handleUslugaClick()"
+>
+
+  <img
+    src="assets/img/2746.png"
+    alt=""
+    class="usluga-item--img"
+  >
+
+  <h2>
+    {{(activeUsluga$ | async)?.title}}
+  </h2>
+
+</div>
