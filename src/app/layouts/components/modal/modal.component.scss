@@ -1,0 +1,39 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(0,0,0,.2);
+}
+
+.modal-block {
+  position: relative;
+
+  background-color: #fff;
+  opacity: 0;
+  transition: .2s ease;
+  transform: translateY(100px);
+}
+
+.modal-block--close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  width: 25px;
+  height: 25px;
+
+  cursor: pointer;
+}
+
+.fadeIn {
+  transition: .2s ease;
+  transform: translateY(0);
+  opacity: 1;
+}

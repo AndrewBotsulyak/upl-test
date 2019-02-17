@@ -1,0 +1,34 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.uslugi-container {
+  display: flex;
+  flex: 1 1 100%;
+  width: 800px;
+  height: 540px;
+}
+
+.categories-wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 40%;
+}
+
+.uslugi-item-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1 1 60%;
+
+  overflow-y: scroll;
+}
+
+hr {
+  width: 100%;
+}
+
+/deep/ p {
+  margin: 0;
+}

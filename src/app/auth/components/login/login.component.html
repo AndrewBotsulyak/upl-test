@@ -1,0 +1,39 @@
+
+<form
+  class="login-form"
+  [formGroup]="loginForm"
+  (ngSubmit)="onSubmit()"
+>
+
+  <div class="login-form--card">
+    <div>
+      <div class="example-header-image"></div>
+      <div>Login</div>
+    </div>
+
+    <div class="inputs-container">
+
+      <div>
+        <input
+          type="email"
+          placeholder="Email"
+          formControlName="email"
+        >
+      </div>
+
+      <div>
+        <input
+          type="password"
+          placeholder="Password"
+          formControlName="password"
+        >
+      </div>
+
+    </div>
+    <div>
+      <button type="submit">Login</button>
+    </div>
+
+  </div>
+
+</form>

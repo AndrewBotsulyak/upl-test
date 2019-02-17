@@ -1,0 +1,55 @@
+
+<form
+  [formGroup]="registerForm"
+  (ngSubmit)="onSubmit()"
+  >
+
+  <div class="example-card">
+    <div>
+      <div class="example-header-image"></div>
+      <div>Registration</div>
+    </div>
+
+    <div class="inputs-container">
+
+      <div>
+        <input
+          placeholder="Name"
+          formControlName="username"
+        >
+      </div>
+
+      <div>
+        <input
+          placeholder="Email"
+          formControlName="email"
+        >
+      </div>
+
+      <div>
+        <input
+          type="password"
+          placeholder="Password"
+          formControlName="password"
+        >
+      </div>
+
+      <div>
+        <input
+          type="password"
+          placeholder="Password Confirm"
+          formControlName="password_confirm"
+        >
+      </div>
+
+    </div>
+    <div>
+      <button
+        type="submit"
+      >
+        Register
+      </button>
+    </div>
+  </div>
+
+</form>

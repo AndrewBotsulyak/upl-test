@@ -1,0 +1,608 @@
+{
+  "1": [
+    {
+      "id": 0,
+      "url": "oplata-uslug",
+      "title": "Платежи"
+    },
+    {
+      "id": 1,
+      "url": "popolnit-mobilnyy",
+      "title": "Пополнить мобильный"
+    },
+    {
+      "id": 2,
+      "url": "oplata-kommunalnyh-uslug",
+      "title": "Оплата коммунальных услуг"
+    },
+    {
+      "id": 3,
+      "url": "hosting-i-domennye-imena",
+      "title": "Хостинг и доменные имена"
+    },
+    {
+      "id": 4,
+      "url": "ip-i-domashnyaya-telefoniya",
+      "title": "IP- и домашняя телефония"
+    },
+    {
+      "id": 5,
+      "url": "internet-i-televidenie",
+      "title": "Интернет и телевидение"
+    },
+    {
+      "id": 6,
+      "url": "banki-i-finansovye-uslugi",
+      "title": "Банки и финансовые услуги"
+    },
+    {
+      "id": 7,
+      "url": "igry-i-socseti",
+      "title": "Игры и соцсети"
+    },
+    {
+      "id": 8,
+      "url": "shtrafy-za-narushenie-pdd",
+      "title": "Штрафы за нарушение ПДД"
+    },
+    {
+      "id": 9,
+      "url": "blagotvoritelnost",
+      "title": "Благотворительность"
+    },
+    {
+      "id": 10,
+      "url": "distribuciya-i-skidochnye-kupony",
+      "title": "Дистрибуция и скидочные купоны"
+    },
+    {
+      "id": 11,
+      "url": "drugie-uslugi",
+      "title": "Другие услуги"
+    }
+  ],
+  "0": [
+    {
+      "id": 0,
+      "url": "oplata-uslug",
+      "title": "Платежи"
+    },
+    {
+      "id": 1,
+      "url": "popolnit-mobilnyy",
+      "title": "Пополнить мобильный"
+    },
+    {
+      "id": 6,
+      "url": "banki-i-finansovye-uslugi",
+      "title": "Банки и финансовые услуги"
+    },
+    {
+      "id": 7,
+      "url": "igry-i-socseti",
+      "title": "Игры и соцсети"
+    },
+    {
+      "id": 8,
+      "url": "shtrafy-za-narushenie-pdd",
+      "title": "Штрафы за нарушение ПДД"
+    },
+    {
+      "id": 9,
+      "url": "blagotvoritelnost",
+      "title": "Благотворительность"
+    },
+    {
+      "id": 10,
+      "url": "distribuciya-i-skidochnye-kupony",
+      "title": "Дистрибуция и скидочные купоны"
+    },
+    {
+      "id": 11,
+      "url": "drugie-uslugi",
+      "title": "Другие услуги"
+    }
+  ],
+  "2": [
+    {
+      "id": 0,
+      "url": "oplata-uslug",
+      "title": "Платежи"
+    },
+    {
+      "id": 1,
+      "url": "popolnit-mobilnyy",
+      "title": "Пополнить мобильный"
+    },
+    {
+      "id": 2,
+      "url": "oplata-kommunalnyh-uslug",
+      "title": "Оплата коммунальных услуг"
+    }
+  ],
+  "3": [
+    {
+      "id": 0,
+      "url": "oplata-uslug",
+      "title": "Платежи"
+    },
+    {
+      "id": 1,
+      "url": "popolnit-mobilnyy",
+      "title": "Пополнить мобильный"
+    },
+    {
+      "id": 2,
+      "url": "oplata-kommunalnyh-uslug",
+      "title": "Оплата коммунальных услуг"
+    },
+    {
+      "id": 3,
+      "url": "hosting-i-domennye-imena",
+      "title": "Хостинг и доменные имена"
+    },
+    {
+      "id": 4,
+      "url": "ip-i-domashnyaya-telefoniya",
+      "title": "IP- и домашняя телефония"
+    },
+    {
+      "id": 5,
+      "url": "internet-i-televidenie",
+      "title": "Интернет и телевидение"
+    },
+    {
+      "id": 6,
+      "url": "banki-i-finansovye-uslugi",
+      "title": "Банки и финансовые услуги"
+    },
+    {
+      "id": 7,
+      "url": "igry-i-socseti",
+      "title": "Игры и соцсети"
+    },
+    {
+      "id": 8,
+      "url": "shtrafy-za-narushenie-pdd",
+      "title": "Штрафы за нарушение ПДД"
+    },
+    {
+      "id": 9,
+      "url": "blagotvoritelnost",
+      "title": "Благотворительность"
+    },
+    {
+      "id": 10,
+      "url": "distribuciya-i-skidochnye-kupony",
+      "title": "Дистрибуция и скидочные купоны"
+    },
+    {
+      "id": 11,
+      "url": "drugie-uslugi",
+      "title": "Другие услуги"
+    }
+  ],
+  "4": [
+    {
+      "id": 0,
+      "url": "oplata-uslug",
+      "title": "Платежи"
+    },
+    {
+      "id": 1,
+      "url": "popolnit-mobilnyy",
+      "title": "Пополнить мобильный"
+    },
+    {
+      "id": 2,
+      "url": "oplata-kommunalnyh-uslug",
+      "title": "Оплата коммунальных услуг"
+    },
+    {
+      "id": 3,
+      "url": "hosting-i-domennye-imena",
+      "title": "Хостинг и доменные имена"
+    },
+    {
+      "id": 4,
+      "url": "ip-i-domashnyaya-telefoniya",
+      "title": "IP- и домашняя телефония"
+    },
+    {
+      "id": 5,
+      "url": "internet-i-televidenie",
+      "title": "Интернет и телевидение"
+    },
+    {
+      "id": 6,
+      "url": "banki-i-finansovye-uslugi",
+      "title": "Банки и финансовые услуги"
+    },
+    {
+      "id": 7,
+      "url": "igry-i-socseti",
+      "title": "Игры и соцсети"
+    },
+    {
+      "id": 8,
+      "url": "shtrafy-za-narushenie-pdd",
+      "title": "Штрафы за нарушение ПДД"
+    }
+  ],
+  "5": [
+    {
+      "id": 0,
+      "url": "oplata-uslug",
+      "title": "Платежи"
+    },
+    {
+      "id": 1,
+      "url": "popolnit-mobilnyy",
+      "title": "Пополнить мобильный"
+    },
+    {
+      "id": 2,
+      "url": "oplata-kommunalnyh-uslug",
+      "title": "Оплата коммунальных услуг"
+    },
+    {
+      "id": 3,
+      "url": "hosting-i-domennye-imena",
+      "title": "Хостинг и доменные имена"
+    },
+    {
+      "id": 4,
+      "url": "ip-i-domashnyaya-telefoniya",
+      "title": "IP- и домашняя телефония"
+    },
+    {
+      "id": 5,
+      "url": "internet-i-televidenie",
+      "title": "Интернет и телевидение"
+    },
+    {
+      "id": 6,
+      "url": "banki-i-finansovye-uslugi",
+      "title": "Банки и финансовые услуги"
+    },
+    {
+      "id": 7,
+      "url": "igry-i-socseti",
+      "title": "Игры и соцсети"
+    },
+    {
+      "id": 8,
+      "url": "shtrafy-za-narushenie-pdd",
+      "title": "Штрафы за нарушение ПДД"
+    },
+    {
+      "id": 9,
+      "url": "blagotvoritelnost",
+      "title": "Благотворительность"
+    },
+    {
+      "id": 10,
+      "url": "distribuciya-i-skidochnye-kupony",
+      "title": "Дистрибуция и скидочные купоны"
+    },
+    {
+      "id": 11,
+      "url": "drugie-uslugi",
+      "title": "Другие услуги"
+    }
+  ],
+  "6": [
+    {
+      "id": 0,
+      "url": "oplata-uslug",
+      "title": "Платежи"
+    },
+    {
+      "id": 1,
+      "url": "popolnit-mobilnyy",
+      "title": "Пополнить мобильный"
+    },
+    {
+      "id": 2,
+      "url": "oplata-kommunalnyh-uslug",
+      "title": "Оплата коммунальных услуг"
+    },
+    {
+      "id": 3,
+      "url": "hosting-i-domennye-imena",
+      "title": "Хостинг и доменные имена"
+    },
+    {
+      "id": 4,
+      "url": "ip-i-domashnyaya-telefoniya",
+      "title": "IP- и домашняя телефония"
+    },
+    {
+      "id": 5,
+      "url": "internet-i-televidenie",
+      "title": "Интернет и телевидение"
+    },
+    {
+      "id": 6,
+      "url": "banki-i-finansovye-uslugi",
+      "title": "Банки и финансовые услуги"
+    },
+    {
+      "id": 7,
+      "url": "igry-i-socseti",
+      "title": "Игры и соцсети"
+    },
+    {
+      "id": 8,
+      "url": "shtrafy-za-narushenie-pdd",
+      "title": "Штрафы за нарушение ПДД"
+    },
+    {
+      "id": 9,
+      "url": "blagotvoritelnost",
+      "title": "Благотворительность"
+    },
+    {
+      "id": 10,
+      "url": "distribuciya-i-skidochnye-kupony",
+      "title": "Дистрибуция и скидочные купоны"
+    },
+    {
+      "id": 11,
+      "url": "drugie-uslugi",
+      "title": "Другие услуги"
+    }
+  ],
+  "7": [
+    {
+      "id": 0,
+      "url": "oplata-uslug",
+      "title": "Платежи"
+    },
+    {
+      "id": 1,
+      "url": "popolnit-mobilnyy",
+      "title": "Пополнить мобильный"
+    },
+    {
+      "id": 2,
+      "url": "oplata-kommunalnyh-uslug",
+      "title": "Оплата коммунальных услуг"
+    },
+    {
+      "id": 3,
+      "url": "hosting-i-domennye-imena",
+      "title": "Хостинг и доменные имена"
+    },
+    {
+      "id": 4,
+      "url": "ip-i-domashnyaya-telefoniya",
+      "title": "IP- и домашняя телефония"
+    },
+    {
+      "id": 5,
+      "url": "internet-i-televidenie",
+      "title": "Интернет и телевидение"
+    },
+    {
+      "id": 6,
+      "url": "banki-i-finansovye-uslugi",
+      "title": "Банки и финансовые услуги"
+    },
+    {
+      "id": 7,
+      "url": "igry-i-socseti",
+      "title": "Игры и соцсети"
+    },
+    {
+      "id": 8,
+      "url": "shtrafy-za-narushenie-pdd",
+      "title": "Штрафы за нарушение ПДД"
+    },
+    {
+      "id": 9,
+      "url": "blagotvoritelnost",
+      "title": "Благотворительность"
+    },
+    {
+      "id": 10,
+      "url": "distribuciya-i-skidochnye-kupony",
+      "title": "Дистрибуция и скидочные купоны"
+    },
+    {
+      "id": 11,
+      "url": "drugie-uslugi",
+      "title": "Другие услуги"
+    }
+  ],
+  "8": [
+    {
+      "id": 0,
+      "url": "oplata-uslug",
+      "title": "Платежи"
+    },
+    {
+      "id": 1,
+      "url": "popolnit-mobilnyy",
+      "title": "Пополнить мобильный"
+    },
+    {
+      "id": 2,
+      "url": "oplata-kommunalnyh-uslug",
+      "title": "Оплата коммунальных услуг"
+    },
+    {
+      "id": 3,
+      "url": "hosting-i-domennye-imena",
+      "title": "Хостинг и доменные имена"
+    },
+    {
+      "id": 4,
+      "url": "ip-i-domashnyaya-telefoniya",
+      "title": "IP- и домашняя телефония"
+    },
+    {
+      "id": 5,
+      "url": "internet-i-televidenie",
+      "title": "Интернет и телевидение"
+    },
+    {
+      "id": 6,
+      "url": "banki-i-finansovye-uslugi",
+      "title": "Банки и финансовые услуги"
+    },
+    {
+      "id": 7,
+      "url": "igry-i-socseti",
+      "title": "Игры и соцсети"
+    },
+    {
+      "id": 8,
+      "url": "shtrafy-za-narushenie-pdd",
+      "title": "Штрафы за нарушение ПДД"
+    },
+    {
+      "id": 9,
+      "url": "blagotvoritelnost",
+      "title": "Благотворительность"
+    },
+    {
+      "id": 10,
+      "url": "distribuciya-i-skidochnye-kupony",
+      "title": "Дистрибуция и скидочные купоны"
+    },
+    {
+      "id": 11,
+      "url": "drugie-uslugi",
+      "title": "Другие услуги"
+    }
+  ],
+  "9": [
+
+    {
+      "id": 4,
+      "url": "ip-i-domashnyaya-telefoniya",
+      "title": "IP- и домашняя телефония"
+    },
+    {
+      "id": 5,
+      "url": "internet-i-televidenie",
+      "title": "Интернет и телевидение"
+    },
+    {
+      "id": 6,
+      "url": "banki-i-finansovye-uslugi",
+      "title": "Банки и финансовые услуги"
+    },
+    {
+      "id": 7,
+      "url": "igry-i-socseti",
+      "title": "Игры и соцсети"
+    },
+    {
+      "id": 8,
+      "url": "shtrafy-za-narushenie-pdd",
+      "title": "Штрафы за нарушение ПДД"
+    },
+    {
+      "id": 9,
+      "url": "blagotvoritelnost",
+      "title": "Благотворительность"
+    },
+    {
+      "id": 10,
+      "url": "distribuciya-i-skidochnye-kupony",
+      "title": "Дистрибуция и скидочные купоны"
+    },
+    {
+      "id": 11,
+      "url": "drugie-uslugi",
+      "title": "Другие услуги"
+    }
+  ],
+  "10": [
+    {
+      "id": 0,
+      "url": "oplata-uslug",
+      "title": "Платежи"
+    },
+    {
+      "id": 1,
+      "url": "popolnit-mobilnyy",
+      "title": "Пополнить мобильный"
+    },
+    {
+      "id": 2,
+      "url": "oplata-kommunalnyh-uslug",
+      "title": "Оплата коммунальных услуг"
+    },
+    {
+      "id": 3,
+      "url": "hosting-i-domennye-imena",
+      "title": "Хостинг и доменные имена"
+    },
+    {
+      "id": 6,
+      "url": "banki-i-finansovye-uslugi",
+      "title": "Банки и финансовые услуги"
+    },
+    {
+      "id": 4,
+      "url": "ip-i-domashnyaya-telefoniya",
+      "title": "IP- и домашняя телефония"
+    },
+    {
+      "id": 5,
+      "url": "internet-i-televidenie",
+      "title": "Интернет и телевидение"
+    },
+
+    {
+      "id": 7,
+      "url": "igry-i-socseti",
+      "title": "Игры и соцсети"
+    }
+  ],
+  "11": [
+    {
+      "id": 0,
+      "url": "oplata-uslug",
+      "title": "Платежи"
+    },
+    {
+      "id": 1,
+      "url": "popolnit-mobilnyy",
+      "title": "Пополнить мобильный"
+    },
+    {
+      "id": 2,
+      "url": "oplata-kommunalnyh-uslug",
+      "title": "Оплата коммунальных услуг"
+    },
+    {
+      "id": 3,
+      "url": "hosting-i-domennye-imena",
+      "title": "Хостинг и доменные имена"
+    },
+    {
+      "id": 8,
+      "url": "shtrafy-za-narushenie-pdd",
+      "title": "Штрафы за нарушение ПДД"
+    },
+    {
+      "id": 9,
+      "url": "blagotvoritelnost",
+      "title": "Благотворительность"
+    },
+    {
+      "id": 10,
+      "url": "distribuciya-i-skidochnye-kupony",
+      "title": "Дистрибуция и скидочные купоны"
+    },
+    {
+      "id": 11,
+      "url": "drugie-uslugi",
+      "title": "Другие услуги"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+
+<div class="uslugi-container">
+
+  <div class="categories-wrap">
+
+      <category-item *ngFor="let category of (categories$ | async); trackBy: trackByFunc"
+        [item]="category"
+        (categoryClick)="handleCategoryClick($event)"
+        [class]="(activeCategory$ | async)?.id === category.id ? 'active' : ''"
+      >
+      </category-item>
+
+  </div>
+
+  <div class="uslugi-item-wrap">
+
+    <ng-container
+      *ngIf="(activeUsluga$ | async); then openUsluga; else uslugaList">
+    </ng-container>
+
+    <ng-template #uslugaList>
+      <usluga-item
+        *ngFor="let usluga of (activeCategory$ | async).uslugi"
+        [item]="usluga"
+        (uslugaClick)="handleUslugaClick($event)"
+      >
+      </usluga-item>
+    </ng-template>
+
+    <ng-template #openUsluga>
+      <usluga-item
+        [item]="(activeUsluga$ | async)"
+        (uslugaClick)="handleUslugaClick($event)"
+      >
+      </usluga-item>
+    </ng-template>
+
+  </div>
+
+</div>
+
+<hr>
+
+<div class="">
+  <p>
+    If server down (for example)
+  </p>
+
+  <button (click)="handleErrorClick()">Get 505 Error</button>
+</div>

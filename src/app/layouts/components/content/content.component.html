@@ -1,0 +1,35 @@
+
+<div class="header">
+
+  <ul class="nav-list">
+    <li>
+      <button (click)="handleLoginClick()">Login</button>
+    </li>
+    <li>
+      <button (click)="handleRegisterClick()">Register</button>
+    </li>
+    <li>
+      <a routerLink="/onas" routerLinkActive="active">O Nas</a>
+    </li>
+    <li>
+      <a routerLink="/faq" routerLinkActive="active">FAQ</a>
+    </li>
+    <li>
+      <a routerLink="/tarif" routerLinkActive="active">Tarif</a>
+    </li>
+    <li>
+      <a routerLink="/bezopasnost" routerLinkActive="active">Bezopasnost</a>
+    </li>
+    <li>
+      <a routerLink="/legal" routerLinkActive="active">Legal</a>
+    </li>
+    <li>
+      <a routerLink="/oplata-uslug" routerLinkActive="active">Uslugi</a>
+    </li>
+  </ul>
+
+</div>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
