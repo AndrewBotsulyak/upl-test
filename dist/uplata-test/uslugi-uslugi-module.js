@@ -245,7 +245,7 @@ var UslugaItemModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"uslugi-container\">\n\n  <div class=\"categories-wrap\">\n\n      <category-item *ngFor=\"let category of (categories$ | async); trackBy: trackByFunc\"\n        [item]=\"category\"\n        (categoryClick)=\"handleCategoryClick($event)\"\n        [class]=\"(activeCategory$ | async)?.id === category.id ? 'active' : ''\"\n      >\n      </category-item>\n\n  </div>\n\n  <div class=\"uslugi-item-wrap\">\n\n    <ng-container\n      *ngIf=\"(activeUsluga$ | async); then openUsluga; else uslugaList\">\n    </ng-container>\n\n    <ng-template #uslugaList>\n      <usluga-item\n        *ngFor=\"let usluga of (activeCategory$ | async).uslugi\"\n        [item]=\"usluga\"\n        (uslugaClick)=\"handleUslugaClick($event)\"\n      >\n      </usluga-item>\n    </ng-template>\n\n    <ng-template #openUsluga>\n      <usluga-item\n        [item]=\"(activeUsluga$ | async)\"\n        (uslugaClick)=\"handleUslugaClick($event)\"\n      >\n      </usluga-item>\n    </ng-template>\n\n  </div>\n\n</div>\n\n<hr>\n\n<div class=\"\">\n  <p>\n    If server down (for example)\n  </p>\n\n  <button (click)=\"handleErrorClick()\">Get 505 Error</button>\n</div>\n"
+module.exports = "\n<div class=\"uslugi-container\">\n\n  <div class=\"categories-wrap\">\n\n      <category-item *ngFor=\"let category of (categories$ | async); trackBy: trackByFunc\"\n        [item]=\"category\"\n        (categoryClick)=\"handleCategoryClick($event)\"\n        [class]=\"(activeCategory$ | async)?.id === category.id ? 'active' : ''\"\n      >\n      </category-item>\n\n  </div>\n\n  <div class=\"uslugi-item-wrap\">\n\n    <ng-container\n      *ngIf=\"(activeUsluga$ | async); then openUsluga; else uslugaList\">\n    </ng-container>\n\n    <ng-template #uslugaList>\n      <usluga-item\n        *ngFor=\"let usluga of (activeCategory$ | async).uslugi\"\n        [item]=\"usluga\"\n        (uslugaClick)=\"handleUslugaClick($event)\"\n      >\n      </usluga-item>\n    </ng-template>\n\n\n    <router-outlet></router-outlet>\n\n  </div>\n\n</div>\n\n<hr>\n\n<div class=\"\">\n  <p>\n    If server down (for example)\n  </p>\n\n  <button (click)=\"handleErrorClick()\">Get 505 Error</button>\n</div>\n"
 
 /***/ }),
 
@@ -385,6 +385,131 @@ var CategoryListModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/uslugi/containers/open-usluga/open-usluga.component.html":
+/*!**************************************************************************!*\
+  !*** ./src/app/uslugi/containers/open-usluga/open-usluga.component.html ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div\n  class=\"usluga-item\"\n  (click)=\"handleUslugaClick()\"\n>\n\n  <img\n    src=\"assets/img/2746.png\"\n    alt=\"\"\n    class=\"usluga-item--img\"\n  >\n\n  <h2>\n    {{(activeUsluga$ | async)?.title}}\n  </h2>\n\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/uslugi/containers/open-usluga/open-usluga.component.scss":
+/*!**************************************************************************!*\
+  !*** ./src/app/uslugi/containers/open-usluga/open-usluga.component.scss ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ":host {\n  width: 130px;\n  height: 180px; }\n\n.usluga-item {\n  display: flex;\n  flex-direction: column;\n  box-sizing: border-box;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n  text-align: center; }\n\n.usluga-item--img {\n  width: 100%;\n  height: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2FuZHJldy9teS91cGxhdGEtdGVzdC9zcmMvYXBwL3VzbHVnaS9jb250YWluZXJzL29wZW4tdXNsdWdhL29wZW4tdXNsdWdhLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsWUFBWTtFQUNaLGFBQWEsRUFBQTs7QUFHZjtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsc0JBQXNCO0VBQ3RCLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsV0FBVztFQUVYLGtCQUFrQixFQUFBOztBQUdwQjtFQUNFLFdBQVc7RUFDWCxZQUFZLEVBQUEiLCJmaWxlIjoic3JjL2FwcC91c2x1Z2kvY29udGFpbmVycy9vcGVuLXVzbHVnYS9vcGVuLXVzbHVnYS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcbiAgd2lkdGg6IDEzMHB4O1xuICBoZWlnaHQ6IDE4MHB4O1xufVxuXG4udXNsdWdhLWl0ZW0ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgd2lkdGg6IDEwMCU7XG5cbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4udXNsdWdhLWl0ZW0tLWltZyB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG59XG4iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/uslugi/containers/open-usluga/open-usluga.component.ts":
+/*!************************************************************************!*\
+  !*** ./src/app/uslugi/containers/open-usluga/open-usluga.component.ts ***!
+  \************************************************************************/
+/*! exports provided: OpenUslugaComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OpenUslugaComponent", function() { return OpenUslugaComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _store_uslugi_store_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../store/uslugi-store.service */ "./src/app/uslugi/store/uslugi-store.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var OpenUslugaComponent = /** @class */ (function () {
+    function OpenUslugaComponent(uslugiStoreService) {
+        this.uslugiStoreService = uslugiStoreService;
+        this.uslugaClick = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+    }
+    OpenUslugaComponent.prototype.ngOnInit = function () {
+        this.activeUsluga$ = this.uslugiStoreService.getActiveUsluga();
+    };
+    OpenUslugaComponent.prototype.handleUslugaClick = function () {
+        this.uslugaClick.emit(this.item);
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], OpenUslugaComponent.prototype, "item", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"])(),
+        __metadata("design:type", Object)
+    ], OpenUslugaComponent.prototype, "uslugaClick", void 0);
+    OpenUslugaComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'open-usluga',
+            template: __webpack_require__(/*! ./open-usluga.component.html */ "./src/app/uslugi/containers/open-usluga/open-usluga.component.html"),
+            styles: [__webpack_require__(/*! ./open-usluga.component.scss */ "./src/app/uslugi/containers/open-usluga/open-usluga.component.scss")],
+            changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ChangeDetectionStrategy"].OnPush
+        }),
+        __metadata("design:paramtypes", [_store_uslugi_store_service__WEBPACK_IMPORTED_MODULE_1__["UslugiStoreService"]])
+    ], OpenUslugaComponent);
+    return OpenUslugaComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/uslugi/containers/open-usluga/open-usluga.module.ts":
+/*!*********************************************************************!*\
+  !*** ./src/app/uslugi/containers/open-usluga/open-usluga.module.ts ***!
+  \*********************************************************************/
+/*! exports provided: OpenUslugaModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OpenUslugaModule", function() { return OpenUslugaModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../shared/shared.module */ "./src/shared/shared.module.ts");
+/* harmony import */ var _open_usluga_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./open-usluga.component */ "./src/app/uslugi/containers/open-usluga/open-usluga.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var OpenUslugaModule = /** @class */ (function () {
+    function OpenUslugaModule() {
+    }
+    OpenUslugaModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [
+                _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]
+            ],
+            exports: [
+                _open_usluga_component__WEBPACK_IMPORTED_MODULE_2__["OpenUslugaComponent"]
+            ],
+            declarations: [
+                _open_usluga_component__WEBPACK_IMPORTED_MODULE_2__["OpenUslugaComponent"]
+            ]
+        })
+    ], OpenUslugaModule);
+    return OpenUslugaModule;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/uslugi/services/uslugi.guard.ts":
 /*!*************************************************!*\
   !*** ./src/app/uslugi/services/uslugi.guard.ts ***!
@@ -462,12 +587,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _containers_category_list_category_list_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./containers/category-list/category-list.component */ "./src/app/uslugi/containers/category-list/category-list.component.ts");
 /* harmony import */ var _services_uslugi_guard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./services/uslugi.guard */ "./src/app/uslugi/services/uslugi.guard.ts");
+/* harmony import */ var _containers_open_usluga_open_usluga_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./containers/open-usluga/open-usluga.component */ "./src/app/uslugi/containers/open-usluga/open-usluga.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -479,6 +606,7 @@ var routes = [
         children: [
             {
                 path: ':uslugaId',
+                component: _containers_open_usluga_open_usluga_component__WEBPACK_IMPORTED_MODULE_4__["OpenUslugaComponent"],
                 canActivate: [_services_uslugi_guard__WEBPACK_IMPORTED_MODULE_3__["UslugiGuard"]]
             }
         ]
@@ -515,12 +643,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _containers_category_list_category_list_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./containers/category-list/category-list.module */ "./src/app/uslugi/containers/category-list/category-list.module.ts");
 /* harmony import */ var _uslugi_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./uslugi-routing.module */ "./src/app/uslugi/uslugi-routing.module.ts");
 /* harmony import */ var _services_uslugi_guard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/uslugi.guard */ "./src/app/uslugi/services/uslugi.guard.ts");
+/* harmony import */ var _containers_open_usluga_open_usluga_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./containers/open-usluga/open-usluga.module */ "./src/app/uslugi/containers/open-usluga/open-usluga.module.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -534,7 +664,8 @@ var UslugiModule = /** @class */ (function () {
             imports: [
                 _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__["SharedModule"],
                 _uslugi_routing_module__WEBPACK_IMPORTED_MODULE_3__["UslugiRoutingModule"],
-                _containers_category_list_category_list_module__WEBPACK_IMPORTED_MODULE_2__["CategoryListModule"]
+                _containers_category_list_category_list_module__WEBPACK_IMPORTED_MODULE_2__["CategoryListModule"],
+                _containers_open_usluga_open_usluga_module__WEBPACK_IMPORTED_MODULE_5__["OpenUslugaModule"]
             ],
             providers: [
                 _services_uslugi_guard__WEBPACK_IMPORTED_MODULE_4__["UslugiGuard"],
